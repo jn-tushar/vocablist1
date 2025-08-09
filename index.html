@@ -1,0 +1,3068 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Journalese Terms Study Guide</title>
+    <link href="https://fonts.cdnfonts.com/css/kalpurush" rel="stylesheet">
+    <style>
+        @media print {
+            body { margin: 0; font-size: 9pt; }
+            .page-break { page-break-before: always; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #2c5aa0;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .header .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #2c5aa0, #1e3d72);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .term-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .term-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            background: #fafafa;
+            transition: transform 0.2s ease;
+        }
+        
+        .term-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .term-name {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .pronunciation {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        
+        .meaning {
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .simple-meaning {
+            flex: 1;
+            font-weight: 500;
+        }
+        
+        .bengali-meaning {
+            flex: 1;
+            color: #0066cc;
+            border-left: 2px solid #e0e0e0;
+            padding-left: 10px;
+        }
+        
+        .example {
+            color: #555;
+            font-style: italic;
+            font-size: 0.95em;
+            background: #f0f7ff;
+            padding: 8px;
+            border-radius: 4px;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .toc h2 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+        }
+        
+        .toc-item {
+            padding: 5px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        
+        .toc-item:last-child {
+            border-bottom: none;
+        }
+        
+        .stats-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .print-btn {
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+        
+        .print-btn:hover {
+            background: #1e3d72;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>জার্নালিজ শব্দভান্ডার</h1>
+            <p>সাংবাদিকতার জন্য গুরুত্বপূর্ণ শব্দ ও বাক্যাংশ</p>
+        </div>
+
+        <!-- Search Bar 
+        <div class="search-bar no-print">
+            <input type="text" id="searchInput" placeholder="শব্দ, অর্থ বা বাংলা অর্থ লিখুন..." onkeyup="searchTerms()">
+        </div> -->
+
+        <!-- Table of Contents -->
+        <div class="toc no-print">
+            <h2>বিষয়বস্তুর তালিকা</h2>
+            <ul>
+                <li><a href="#economics">অর্থনীতি ও অর্থ (৬৫ শব্দ)</a></li>
+                <li><a href="#governance">শাসন ও রাজনীতি (৬৫ শব্দ)</a></li>
+                <li><a href="#international">আন্তর্জাতিক বিষয় (৫০ শব্দ)</a></li>
+                <li><a href="#general">সাধারণ সংবাদ প্রতিবেদন (৪০ শব্দ)</a></li>
+                <li><a href="#business">ব্যবসা ও বাজার (৩০ শব্দ)</a></li>
+                <li><a href="#social">সামাজিক বিষয় (২০ শব্দ)</a></li>
+                <li><a href="#environment">পরিবেশ ও প্রযুক্তি (২০ শব্দ)</a></li>
+                <li><a href="#legal">আইনি ও বিচারিক (১০ শব্দ)</a></li>
+            </ul>
+        </div>
+
+        <!-- Stats Box 
+        <div class="stats-box no-print">
+            <p><strong>মোট শব্দ:</strong> ৩০০</p>
+            <p><strong>বিভাগ:</strong> ৮</p>
+            <p><strong>সংকলন বছর:</strong> ২০২৫</p>
+        </div> -->
+
+        <!-- Print Button 
+        <div class="print-button no-print">
+            <button onclick="window.print()">প্রিন্ট করুন</button>
+        </div> -->
+
+        <!-- Economics and Finance -->
+        <div class="section" id="economics">
+            <div class="section-header">অর্থনীতি ও অর্থ (৬৫ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Arbitrage</div>
+                    <div class="pronunciation">/ˈɑːr.bɪ.trɑːʒ/ (আরবিট্রাজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Profit-taking</div>
+                        <div class="bengali-meaning">মধ্যস্থতা</div>
+                    </div>
+                    <div class="example">Traders used arbitrage to exploit price differences.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Asset</div>
+                    <div class="pronunciation">/ˈæs.et/ (অ্যাসেট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Property</div>
+                        <div class="bengali-meaning">সম্পদ</div>
+                    </div>
+                    <div class="example">The company’s assets include real estate and stocks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Austerity</div>
+                    <div class="pronunciation">/ɔːˈster.ɪ.ti/ (অস্টেরিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Budget cuts</div>
+                        <div class="bengali-meaning">কৃচ্ছ্রতা, সাশ্রয়ী নীতি</div>
+                    </div>
+                    <div class="example">The government’s austerity measures reduced public spending.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bailout</div>
+                    <div class="pronunciation">/ˈbeɪl.aʊt/ (বেলআউট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Financial rescue</div>
+                        <div class="bengali-meaning">আর্থিক উদ্ধার</div>
+                    </div>
+                    <div class="example">The bank received a bailout to avoid collapse.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bond</div>
+                    <div class="pronunciation">/bɒnd/ (বন্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Loan</div>
+                        <div class="bengali-meaning">বন্ড</div>
+                    </div>
+                    <div class="example">Government bonds offer low but stable returns.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Capital</div>
+                    <div class="pronunciation">/ˈkæp.ɪ.təl/ (ক্যাপিটাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Money</div>
+                        <div class="bengali-meaning">মূলধন</div>
+                    </div>
+                    <div class="example">The firm raised capital through a public offering.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Cartel</div>
+                    <div class="pronunciation">/kɑːrˈtel/ (কার্টেল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Syndicate</div>
+                        <div class="bengali-meaning">কার্টেল</div>
+                    </div>
+                    <div class="example">The oil cartel controlled global prices.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Commodity</div>
+                    <div class="pronunciation">/kəˈmɒd.ɪ.ti/ (কমোডিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Raw material</div>
+                        <div class="bengali-meaning">পণ্য</div>
+                    </div>
+                    <div class="example">Commodities like gold surged in value.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Contraction</div>
+                    <div class="pronunciation">/kənˈtræk.ʃən/ (কনট্র্যাকশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Decline</div>
+                        <div class="bengali-meaning">সংকোচন</div>
+                    </div>
+                    <div class="example">The economy faced a contraction last quarter.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Deficit</div>
+                    <div class="pronunciation">/ˈdef.ɪ.sɪt/ (ডেফিসিট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Shortfall</div>
+                        <div class="bengali-meaning">ঘাটতি</div>
+                    </div>
+                    <div class="example">The country faces a trade deficit of $50 billion.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Depreciation</div>
+                    <div class="pronunciation">/dɪˌpriː.ʃiˈeɪ.ʃən/ (ডিপ্রিশিয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Value decline</div>
+                        <div class="bengali-meaning">মূল্যহ্রাস</div>
+                    </div>
+                    <div class="example">The currency’s depreciation hurt exporters.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Devaluation</div>
+                    <div class="pronunciation">/ˌdiː.væl.juˈeɪ.ʃən/ (ডিভ্যালুয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Value reduction</div>
+                        <div class="bengali-meaning">মুদ্রার অবমূল্যায়ন</div>
+                    </div>
+                    <div class="example">Currency devaluation boosted exports.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Divest</div>
+                    <div class="pronunciation">/daɪˈvest/ (ডাইভেস্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Sell off</div>
+                        <div class="bengali-meaning">বিক্রি করা</div>
+                    </div>
+                    <div class="example">The company divested its non-core assets.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Downturn</div>
+                    <div class="pronunciation">/ˈdaʊn.tɜːrn/ (ডাউনটার্ন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Slump</div>
+                        <div class="bengali-meaning">মন্দা</div>
+                    </div>
+                    <div class="example">The industry faced a sharp downturn.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Embargo</div>
+                    <div class="pronunciation">/ɪmˈbɑːr.ɡoʊ/ (এমবার্গো)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Ban</div>
+                        <div class="bengali-meaning">নিষেধাজ্ঞা</div>
+                    </div>
+                    <div class="example">The trade embargo hurt the economy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Equity</div>
+                    <div class="pronunciation">/ˈek.wɪ.ti/ (ইকুইটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Ownership</div>
+                        <div class="bengali-meaning">সমতা/মালিকানা</div>
+                    </div>
+                    <div class="example">The company issued new equity to raise funds.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Expenditure</div>
+                    <div class="pronunciation">/ɪkˈspen.dɪ.tʃər/ (এক্সপেন্ডিচার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Spending</div>
+                        <div class="bengali-meaning">ব্যয়</div>
+                    </div>
+                    <div class="example">Government expenditure rose sharply.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Fiscal</div>
+                    <div class="pronunciation">/ˈfɪs.kəl/ (ফিসকাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Budget-related</div>
+                        <div class="bengali-meaning">আর্থিক</div>
+                    </div>
+                    <div class="example">The government’s fiscal policy spurred growth.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Foreclosure</div>
+                    <div class="pronunciation">/fɔːrˈkloʊ.ʒər/ (ফোরক্লোজার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Repossession</div>
+                        <div class="bengali-meaning">সম্পত্তি বাজেয়াপ্ত</div>
+                    </div>
+                    <div class="example">Foreclosures increased during the crisis.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Gini</div>
+                    <div class="pronunciation">/ˈdʒiː.ni/ (জিনি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Inequality measure</div>
+                        <div class="bengali-meaning">জিনি সহগ</div>
+                    </div>
+                    <div class="example">The Gini coefficient showed rising inequality.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Glut</div>
+                    <div class="pronunciation">/ɡlʌt/ (গ্লাট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Surplus</div>
+                        <div class="bengali-meaning">আধিক্য</div>
+                    </div>
+                    <div class="example">A glut of oil lowered prices.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Hedge</div>
+                    <div class="pronunciation">/hedʒ/ (হেজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Protect</div>
+                        <div class="bengali-meaning">সুরক্ষা</div>
+                    </div>
+                    <div class="example">Investors hedge against market risks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Inflation</div>
+                    <div class="pronunciation">/ɪnˈfleɪ.ʃən/ (ইনফ্লেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Price rise</div>
+                        <div class="bengali-meaning">মুদ্রাস্ফীতি</div>
+                    </div>
+                    <div class="example">Inflation eroded consumers’ purchasing power.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Insolvency</div>
+                    <div class="pronunciation">/ɪnˈsɒl.vən.si/ (ইনসলভেন্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Bankruptcy</div>
+                        <div class="bengali-meaning">দেউলিয়াত্ব</div>
+                    </div>
+                    <div class="example">The firm’s insolvency led to layoffs.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Intervention</div>
+                    <div class="pronunciation">/ˌɪn.tərˈven.ʃən/ (ইনটারভেনশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Interference</div>
+                        <div class="bengali-meaning">হস্তক্ষেপ</div>
+                    </div>
+                    <div class="example">The central bank’s intervention stabilized the currency.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Laundering</div>
+                    <div class="pronunciation">/ˈlɔːn.dər.ɪŋ/ (লন্ডারিং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cleaning money</div>
+                        <div class="bengali-meaning">অর্থ পাচার</div>
+                    </div>
+                    <div class="example">The scandal involved money laundering.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Leverage</div>
+                    <div class="pronunciation">/ˈlev.ər.ɪdʒ/ (লিভারেজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Borrowing power</div>
+                        <div class="bengali-meaning">ঋণের সুবিধা</div>
+                    </div>
+                    <div class="example">The firm used leverage to fund its expansion.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Liability</div>
+                    <div class="pronunciation">/ˌlaɪ.əˈbɪl.ɪ.ti/ (লায়াবিলিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Debt</div>
+                        <div class="bengali-meaning">দায়</div>
+                    </div>
+                    <div class="example">The company’s liabilities exceeded its assets.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Liquidity</div>
+                    <div class="pronunciation">/lɪˈkwɪd.ɪ.ti/ (লিকুইডিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cash flow</div>
+                        <div class="bengali-meaning">তারল্য</div>
+                    </div>
+                    <div class="example">The central bank injected liquidity into the market.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Margin</div>
+                    <div class="pronunciation">/ˈmɑːr.dʒɪn/ (মার্জিন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Profit edge</div>
+                        <div class="bengali-meaning">মার্জিন</div>
+                    </div>
+                    <div class="example">Retailers operated on thin margins.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Merger</div>
+                    <div class="pronunciation">/ˈmɜːr.dʒər/ (মার্জার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Combination</div>
+                        <div class="bengali-meaning">একীভবন</div>
+                    </div>
+                    <div class="example">The merger created a market leader.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Monetarist</div>
+                    <div class="pronunciation">/ˈmɒn.ɪ.tər.ɪst/ (মোনেটারিস্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Financial conservative</div>
+                        <div class="bengali-meaning">মুদ্রানীতিবাদী</div>
+                    </div>
+                    <div class="example">Monetarist policies focus on controlling money supply.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Monopoly</div>
+                    <div class="pronunciation">/məˈnɒp.əl.i/ (মনোপলি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Control</div>
+                        <div class="bengali-meaning">একচেটিয়া</div>
+                    </div>
+                    <div class="example">The firm’s monopoly stifled competition.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Offshore</div>
+                    <div class="pronunciation">/ˈɒf.ʃɔːr/ (অফশোর)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Overseas</div>
+                        <div class="bengali-meaning">বিদেশী</div>
+                    </div>
+                    <div class="example">The company moved funds to an offshore account.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Overhaul</div>
+                    <div class="pronunciation">/ˈoʊ.vər.hɔːl/ (ওভারহল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Reform</div>
+                        <div class="bengali-meaning">সংস্কার</div>
+                    </div>
+                    <div class="example">The tax system needs an overhaul.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Parity</div>
+                    <div class="pronunciation">/ˈpær.ɪ.ti/ (প্যারিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Equality</div>
+                        <div class="bengali-meaning">সমতা</div>
+                    </div>
+                    <div class="example">The currency reached parity with the dollar.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Portfolio</div>
+                    <div class="pronunciation">/pɔːrtˈfoʊ.li.oʊ/ (পোর্টফোলিও)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Investments</div>
+                        <div class="bengali-meaning">বিনিয়োগ</div>
+                    </div>
+                    <div class="example">Diversifying her portfolio reduced risks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Privatization</div>
+                    <div class="pronunciation">/ˌpraɪ.və.təˈzeɪ.ʃən/ (প্রাইভেটাইজেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Sell-off</div>
+                        <div class="bengali-meaning">বেসরকারীকরণ</div>
+                    </div>
+                    <div class="example">Privatization sparked public debate.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Quantitative</div>
+                    <div class="pronunciation">/ˈkwɒn.tɪ.teɪ.tɪv/ (কোয়ান্টিটেটিভ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Numerical</div>
+                        <div class="bengali-meaning">পরিমাণগত</div>
+                    </div>
+                    <div class="example">Quantitative easing boosted markets.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Recession</div>
+                    <div class="pronunciation">/rɪˈseʃ.ən/ (রিসেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Downturn</div>
+                        <div class="bengali-meaning">মন্দা</div>
+                    </div>
+                    <div class="example">The country slipped into a recession.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Remittance</div>
+                    <div class="pronunciation">/rɪˈmɪt.əns/ (রেমিট্যান্স)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Payment</div>
+                        <div class="bengali-meaning">প্রবাসী আয়</div>
+                    </div>
+                    <div class="example">Remittances support the economy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Revenue</div>
+                    <div class="pronunciation">/ˈrev.ə.nuː/ (রেভেনিউ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Income</div>
+                        <div class="bengali-meaning">রাজস্ব</div>
+                    </div>
+                    <div class="example">Tax revenue funded public projects.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Solvency</div>
+                    <div class="pronunciation">/ˈsɒl.vən.si/ (সলভেন্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Financial health</div>
+                        <div class="bengali-meaning">দ্রবণশীলতা</div>
+                    </div>
+                    <div class="example">The bank’s solvency reassured investors.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Speculator</div>
+                    <div class="pronunciation">/ˈspek.jə.leɪ.tər/ (স্পেকুলেটর)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Gambler</div>
+                        <div class="bengali-meaning">জল্পনাকারী</div>
+                    </div>
+                    <div class="example">Speculators drove up commodity prices.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Stimulus</div>
+                    <div class="pronunciation">/ˈstɪm.jə.ləs/ (স্টিমুলাস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Boost</div>
+                        <div class="bengali-meaning">উদ্দীপনা</div>
+                    </div>
+                    <div class="example">The stimulus package revived growth.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Stagnation</div>
+                    <div class="pronunciation">/stæɡˈneɪ.ʃən/ (স্ট্যাগনেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Standstill</div>
+                        <div class="bengali-meaning">স্থবিরতা</div>
+                    </div>
+                    <div class="example">Economic stagnation worried policymakers.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Subsidy</div>
+                    <div class="pronunciation">/ˈsʌb.sɪ.di/ (সাবসিডি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Financial aid</div>
+                        <div class="bengali-meaning">ভর্তুকি</div>
+                    </div>
+                    <div class="example">Farmers received subsidies to boost production.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Subsistence</div>
+                    <div class="pronunciation">/səbˈsɪs.təns/ (সাবসিস্টেন্স)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Survival</div>
+                        <div class="bengali-meaning">জীবনধারণ</div>
+                    </div>
+                    <div class="example">Farmers lived at subsistence levels.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Syndicate</div>
+                    <div class="pronunciation">/ˈsɪn.dɪ.kət/ (সিন্ডিকেট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Group</div>
+                        <div class="bengali-meaning">সিন্ডিকেট</div>
+                    </div>
+                    <div class="example">The syndicate controlled the market.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Tariff</div>
+                    <div class="pronunciation">/ˈtær.ɪf/ (ট্যারিফ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Tax on imports</div>
+                        <div class="bengali-meaning">শুল্ক</div>
+                    </div>
+                    <div class="example">New tariffs increased the cost of imported goods.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Trade-off</div>
+                    <div class="pronunciation">/ˈtreɪd.ɒf/ (ট্রেড-অফ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Compromise</div>
+                        <div class="bengali-meaning">আপস</div>
+                    </div>
+                    <div class="example">The policy involved a trade-off between growth and inflation.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Underwrite</div>
+                    <div class="pronunciation">/ˌʌn.dərˈraɪt/ (আন্ডাররাইট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Guarantee</div>
+                        <div class="bengali-meaning">গ্যারান্টি</div>
+                    </div>
+                    <div class="example">The bank underwrote the bond issue.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Venture</div>
+                    <div class="pronunciation">/ˈven.tʃər/ (ভেনচার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Startup</div>
+                        <div class="bengali-meaning">উদ্যোগ</div>
+                    </div>
+                    <div class="example">The venture capital fund backed tech startups.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Viability</div>
+                    <div class="pronunciation">/ˌvaɪ.əˈbɪl.ɪ.ti/ (ভায়াবিলিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Feasibility</div>
+                        <div class="bengali-meaning">সম্ভাব্যতা</div>
+                    </div>
+                    <div class="example">The project’s viability was questioned.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Volatility</div>
+                    <div class="pronunciation">/ˌvɒl.əˈtɪl.ɪ.ti/ (ভলাটিলিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Instability</div>
+                        <div class="bengali-meaning">অস্থিরতা</div>
+                    </div>
+                    <div class="example">Market volatility caused stock prices to fluctuate.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Waiver</div>
+                    <div class="pronunciation">/ˈweɪ.vər/ (ওয়েভার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Exemption</div>
+                        <div class="bengali-meaning">ছাড়</div>
+                    </div>
+                    <div class="example">The loan waiver helped farmers.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Windfall</div>
+                    <div class="pronunciation">/ˈwɪnd.fɔːl/ (উইন্ডফল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Bonus</div>
+                        <div class="bengali-meaning">অপ্রত্যাশিত লাভ</div>
+                    </div>
+                    <div class="example">The company enjoyed a windfall from tax cuts.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Write-off</div>
+                    <div class="pronunciation">/ˈraɪt.ɒf/ (রাইট-অফ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cancel</div>
+                        <div class="bengali-meaning">অবলোপন</div>
+                    </div>
+                    <div class="example">The bank wrote off bad loans.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Yield</div>
+                    <div class="pronunciation">/jiːld/ (ইয়েল্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Return</div>
+                        <div class="bengali-meaning">প্রতিফল</div>
+                    </div>
+                    <div class="example">The bond offers a high yield for investors.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Zero-sum</div>
+                    <div class="pronunciation">/ˈzɪər.oʊ sʌm/ (জিরো-সাম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Fixed outcome</div>
+                        <div class="bengali-meaning">শূন্য-যোগ</div>
+                    </div>
+                    <div class="example">Trade wars are often a zero-sum game.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Amortization</div>
+                    <div class="pronunciation">/əˌmɔːr.təˈzeɪ.ʃən/ (অ্যামর্টাইজেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Repayment</div>
+                        <div class="bengali-meaning">পরিশোধ</div>
+                    </div>
+                    <div class="example">Amortization reduced the loan balance.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Benchmark</div>
+                    <div class="pronunciation">/ˈben.tʃmɑːrk/ (বেঞ্চমার্ক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Standard</div>
+                        <div class="bengali-meaning">মানদণ্ড</div>
+                    </div>
+                    <div class="example">The index is a benchmark for investors.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Collateral</div>
+                    <div class="pronunciation">/kəˈlæt.ər.əl/ (কল্যাটারাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Security</div>
+                        <div class="bengali-meaning">জামানত</div>
+                    </div>
+                    <div class="example">The loan required collateral.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Crowdfunding</div>
+                    <div class="pronunciation">/ˈkraʊdˌfʌn.dɪŋ/ (ক্রাউডফান্ডিং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Group funding</div>
+                        <div class="bengali-meaning">জনসাধারণের অর্থায়ন</div>
+                    </div>
+                    <div class="example">The startup raised money through crowdfunding.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Derivatives</div>
+                    <div class="pronunciation">/dɪˈrɪv.ə.tɪvz/ (ডেরিভেটিভস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Financial contracts</div>
+                        <div class="bengali-meaning">ডেরিভেটিভস</div>
+                    </div>
+                    <div class="example">Derivatives trading increased market risks.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Governance and Politics -->
+        <div class="section" id="governance">
+            <div class="section-header">শাসন ও রাজনীতি (৬৫ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Abdication</div>
+                    <div class="pronunciation">/ˌæb.dɪˈkeɪ.ʃən/ (অ্যাবডিকেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Resignation</div>
+                        <div class="bengali-meaning">পদত্যাগ</div>
+                    </div>
+                    <div class="example">The king’s abdication shocked the nation.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Accountability</div>
+                    <div class="pronunciation">/əˌkaʊn.təˈbɪl.ɪ.ti/ (অ্যাকাউন্টেবিলিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Responsibility</div>
+                        <div class="bengali-meaning">জবাবদিহিতা</div>
+                    </div>
+                    <div class="example">The government promised greater accountability.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Apportionment</div>
+                    <div class="pronunciation">/əˈpɔːr.ʃən.mənt/ (অ্যাপোর্শনমেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Allocation</div>
+                        <div class="bengali-meaning">বণ্টন</div>
+                    </div>
+                    <div class="example">Apportionment of seats sparked debate.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Autocracy</div>
+                    <div class="pronunciation">/ɔːˈtɒk.rə.si/ (অটোক্র্যাসি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Dictatorship</div>
+                        <div class="bengali-meaning">স্বৈরাচার</div>
+                    </div>
+                    <div class="example">The autocracy suppressed dissent.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bipartisan</div>
+                    <div class="pronunciation">/baɪˈpɑːr.tɪ.zən/ (বাইপার্টিজান)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Two-party</div>
+                        <div class="bengali-meaning">দ্বিদলীয়</div>
+                    </div>
+                    <div class="example">The bill gained bipartisan support.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bureaucracy</div>
+                    <div class="pronunciation">/bjʊəˈrɒk.rə.si/ (ব্যুরোক্র্যাসি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Administration</div>
+                        <div class="bengali-meaning">আমলাতন্ত্র</div>
+                    </div>
+                    <div class="example">Bureaucracy delayed the project’s approval.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Caucus</div>
+                    <div class="pronunciation">/ˈkɔː.kəs/ (ককাস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Meeting</div>
+                        <div class="bengali-meaning">দলীয় সভা</div>
+                    </div>
+                    <div class="example">The caucus decided the party’s stance.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Clemency</div>
+                    <div class="pronunciation">/ˈklem.ən.si/ (ক্লেমেন্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Mercy</div>
+                        <div class="bengali-meaning">ক্ষমা</div>
+                    </div>
+                    <div class="example">The governor granted clemency to prisoners.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Coalition</div>
+                    <div class="pronunciation">/ˌkoʊ.əˈlɪʃ.ən/ (কোয়ালিশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Alliance</div>
+                        <div class="bengali-meaning">জোট</div>
+                    </div>
+                    <div class="example">The coalition government struggled to pass reforms.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Coalitionist</div>
+                    <div class="pronunciation">/ˌkoʊ.əˈlɪʃ.ən.ɪst/ (কোয়ালিশনিস্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Alliance supporter</div>
+                        <div class="bengali-meaning">জোটপন্থী</div>
+                    </div>
+                    <div class="example">Coalitionists negotiated power-sharing.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Cronyism</div>
+                    <div class="pronunciation">/ˈkroʊ.ni.ɪz.əm/ (ক্রোনিইজম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Favoritism</div>
+                        <div class="bengali-meaning">পক্ষপাতিত্ব</div>
+                    </div>
+                    <div class="example">Cronyism tainted the administration.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Deadlock</div>
+                    <div class="pronunciation">/ˈded.lɒk/ (ডেডলক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Stalemate</div>
+                        <div class="bengali-meaning">অচলাবস্থা</div>
+                    </div>
+                    <div class="example">The budget talks ended in a deadlock.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Decree</div>
+                    <div class="pronunciation">/dɪˈkriː/ (ডিক্রি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Order</div>
+                        <div class="bengali-meaning">ডিক্রি</div>
+                    </div>
+                    <div class="example">The president issued a decree to ban protests.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Demagogue</div>
+                    <div class="pronunciation">/ˈdem.ə.ɡɒɡ/ (ডেমাগগ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Rabble-rouser</div>
+                        <div class="bengali-meaning">জননেতা</div>
+                    </div>
+                    <div class="example">The demagogue incited the crowd.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Deregulation</div>
+                    <div class="pronunciation">/ˌdiː.reɡ.jəˈleɪ.ʃən/ (ডিরেগুলেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Rule removal</div>
+                        <div class="bengali-meaning">নিয়ন্ত্রণমুক্তি</div>
+                    </div>
+                    <div class="example">Deregulation boosted the energy sector.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Dissolution</div>
+                    <div class="pronunciation">/ˌdɪs.əˈluː.ʃən/ (ডিসলুশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">End</div>
+                        <div class="bengali-meaning">বিলুপ্তি</div>
+                    </div>
+                    <div class="example">The parliament’s dissolution led to elections.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Enfranchisement</div>
+                    <div class="pronunciation">/ɪnˈfræn.tʃaɪz.mənt/ (এনফ্র্যাঞ্চাইজমেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Voting rights</div>
+                        <div class="bengali-meaning">ভোটাধিকার</div>
+                    </div>
+                    <div class="example">Enfranchisement empowered minorities.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Filibuster</div>
+                    <div class="pronunciation">/ˈfɪl.ɪ.bʌs.tər/ (ফিলিবাস্টার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Delay tactic</div>
+                        <div class="bengali-meaning">বিলম্ব কৌশল</div>
+                    </div>
+                    <div class="example">The senator used a filibuster to block the bill.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Gerrymandering</div>
+                    <div class="pronunciation">/ˈdʒer.iˌmæn.dər.ɪŋ/ (জেরিম্যান্ডারিং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Redistricting</div>
+                        <div class="bengali-meaning">নির্বাচনী মানচিত্র কৌশল</div>
+                    </div>
+                    <div class="example">Gerrymandering favored the ruling party.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Impeachment</div>
+                    <div class="pronunciation">/ɪmˈpiːtʃ.mənt/ (ইমপিচমেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Accusation</div>
+                        <div class="bengali-meaning">অভিশংসন</div>
+                    </div>
+                    <div class="example">The president faced impeachment proceedings.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Incumbent</div>
+                    <div class="pronunciation">/ɪnˈkʌm.bənt/ (ইনকামবেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Current officeholder</div>
+                        <div class="bengali-meaning">বর্তমান পদাধিকারী</div>
+                    </div>
+                    <div class="example">The incumbent faces a tough re-election battle.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Incursion</div>
+                    <div class="pronunciation">/ɪnˈkɜːr.ʒən/ (ইনকার্শন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Invasion</div>
+                        <div class="bengali-meaning">অনুপ্রবেশ</div>
+                    </div>
+                    <div class="example">The military incursion escalated tensions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Insurgency</div>
+                    <div class="pronunciation">/ɪnˈsɜːr.dʒən.si/ (ইনসার্জেন্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Rebellion</div>
+                        <div class="bengali-meaning">বিদ্রোহ</div>
+                    </div>
+                    <div class="example">The insurgency disrupted governance.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Junta</div>
+                    <div class="pronunciation">/ˈhʊn.tə/ (হুন্তা)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Military rule</div>
+                        <div class="bengali-meaning">সামরিক শাসন</div>
+                    </div>
+                    <div class="example">The junta seized power after a coup.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Lame-duck</div>
+                    <div class="pronunciation">/ˈleɪm dʌk/ (লেম-ডাক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Outgoing</div>
+                        <div class="bengali-meaning">অকার্যকর</div>
+                    </div>
+                    <div class="example">The lame-duck president signed few laws.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Legislature</div>
+                    <div class="pronunciation">/ˈledʒ.ɪs.leɪ.tʃər/ (লেজিসলেচার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Parliament</div>
+                        <div class="bengali-meaning">আইনসভা</div>
+                    </div>
+                    <div class="example">The legislature passed the reform bill.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Lobby</div>
+                    <div class="pronunciation">/ˈlɒb.i/ (লবি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Influence</div>
+                        <div class="bengali-meaning">প্রভাব বিস্তার</div>
+                    </div>
+                    <div class="example">Corporate lobbies pushed for tax cuts.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Lobbyist</div>
+                    <div class="pronunciation">/ˈlɒb.i.ɪst/ (লবিইস্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Advocate</div>
+                        <div class="bengali-meaning">প্রভাবশালী</div>
+                    </div>
+                    <div class="example">Lobbyists influenced the trade policy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Mandate</div>
+                    <div class="pronunciation">/ˈmæn.deɪt/ (ম্যান্ডেট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Authority</div>
+                        <div class="bengali-meaning">আদেশ/ক্ষমতা</div>
+                    </div>
+                    <div class="example">The party won a strong mandate in the election.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Moratorium</div>
+                    <div class="pronunciation">/ˌmɒr.əˈtɔːr.i.əm/ (মরাটোরিয়াম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Pause</div>
+                        <div class="bengali-meaning">স্থগিতাদেশ</div>
+                    </div>
+                    <div class="example">The moratorium on evictions helped tenants.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Nepotism</div>
+                    <div class="pronunciation">/ˈnep.ə.tɪz.əm/ (নেপোটিজম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Favoritism</div>
+                        <div class="bengali-meaning">স্বজনপ্রীতি</div>
+                    </div>
+                    <div class="example">Nepotism plagued the government.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Oligarchy</div>
+                    <div class="pronunciation">/ˈɒl.ɪ.ɡɑːr.ki/ (অলিগার্কি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Elite rule</div>
+                        <div class="bengali-meaning">অভিজাততন্ত্র</div>
+                    </div>
+                    <div class="example">The oligarchy controlled key industries.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Ombudsman</div>
+                    <div class="pronunciation">/ˈɒm.bʊdz.mən/ (অমবুডসম্যান)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Mediator</div>
+                        <div class="bengali-meaning">ন্যায়পাল</div>
+                    </div>
+                    <div class="example">The ombudsman investigated complaints.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Oversight</div>
+                    <div class="pronunciation">/ˈoʊ.vərˌsaɪt/ (ওভারসাইট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Supervision</div>
+                        <div class="bengali-meaning">তদারকি</div>
+                    </div>
+                    <div class="example">The committee provides oversight of public funds.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Partisan</div>
+                    <div class="pronunciation">/ˈpɑːr.tɪ.zən/ (পার্টিজান)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Biased</div>
+                        <div class="bengali-meaning">দলগত</div>
+                    </div>
+                    <div class="example">Partisan politics hindered bipartisan cooperation.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Patronage</div>
+                    <div class="pronunciation">/ˈpeɪ.trən.ɪdʒ/ (প্যাট্রোনেজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Favor</div>
+                        <div class="bengali-meaning">পৃষ্ঠপোষকতা</div>
+                    </div>
+                    <div class="example">Political patronage secured loyalists’ jobs.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Plebiscite</div>
+                    <div class="pronunciation">/ˈpleb.ɪ.saɪt/ (প্লেবিসাইট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Referendum</div>
+                        <div class="bengali-meaning">গণভোট</div>
+                    </div>
+                    <div class="example">The plebiscite approved constitutional changes.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Polarization</div>
+                    <div class="pronunciation">/ˌpoʊ.lər.əˈzeɪ.ʃən/ (পোলারাইজেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Division</div>
+                        <div class="bengali-meaning">মেরুকরণ</div>
+                    </div>
+                    <div class="example">Polarization deepened political divides.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Populism</div>
+                    <div class="pronunciation">/ˈpɒp.jə.lɪz.əm/ (পপুলিজম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Public appeal</div>
+                        <div class="bengali-meaning">জনতুষ্টিবাদ</div>
+                    </div>
+                    <div class="example">Populism gained traction among disillusioned voters.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Precedent</div>
+                    <div class="pronunciation">/ˈpres.ɪ.dənt/ (প্রেসিডেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Example</div>
+                        <div class="bengali-meaning">নজির</div>
+                    </div>
+                    <div class="example">The ruling set a legal precedent.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Quorum</div>
+                    <div class="pronunciation">/ˈkwɔːr.əm/ (কোয়োরাম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Minimum attendance</div>
+                        <div class="bengali-meaning">গণসংখ্যা</div>
+                    </div>
+                    <div class="example">The meeting lacked a quorum to vote.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Ratify</div>
+                    <div class="pronunciation">/ˈræt.ɪ.faɪ/ (র্যাটিফাই)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Approve</div>
+                        <div class="bengali-meaning">অনুমোদন</div>
+                    </div>
+                    <div class="example">The parliament ratified the trade agreement.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Redress</div>
+                    <div class="pronunciation">/rɪˈdres/ (রিড্রেস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Remedy</div>
+                        <div class="bengali-meaning">প্রতিকার</div>
+                    </div>
+                    <div class="example">Citizens sought redress for injustices.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Referendum</div>
+                    <div class="pronunciation">/ˌref.əˈren.dəm/ (রেফারেন্ডাম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Public vote</div>
+                        <div class="bengali-meaning">গণভোট</div>
+                    </div>
+                    <div class="example">The referendum decided the country’s EU membership.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Repeal</div>
+                    <div class="pronunciation">/rɪˈpiːl/ (রিপিল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cancel</div>
+                        <div class="bengali-meaning">বাতিল</div>
+                    </div>
+                    <div class="example">The law was repealed after protests.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Rhetoric</div>
+                    <div class="pronunciation">/ˈret.ə.rɪk/ (রেটরিক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Persuasion</div>
+                        <div class="bengali-meaning">অলঙ্কার</div>
+                    </div>
+                    <div class="example">The leader’s rhetoric inspired voters.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Sanction</div>
+                    <div class="pronunciation">/ˈsæŋk.ʃən/ (স্যাঙ্কশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Penalty</div>
+                        <div class="bengali-meaning">নিষেধাজ্ঞা</div>
+                    </div>
+                    <div class="example">The UN imposed sanctions on the regime.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Secession</div>
+                    <div class="pronunciation">/sɪˈseʃ.ən/ (সিসেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Withdrawal</div>
+                        <div class="bengali-meaning">বিচ্ছিন্নতা</div>
+                    </div>
+                    <div class="example">The region threatened secession.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Sovereignty</div>
+                    <div class="pronunciation">/ˈsɒv.rən.ti/ (সভরেনটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Independence</div>
+                        <div class="bengali-meaning">সার্বভৌমত্ব</div>
+                    </div>
+                    <div class="example">The nation defended its sovereignty against external pressure.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Stalemate</div>
+                    <div class="pronunciation">/ˈsteɪl.meɪt/ (স্টেলমেট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Impasse</div>
+                        <div class="bengali-meaning">অচলাবস্থা</div>
+                    </div>
+                    <div class="example">Negotiations reached a stalemate.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Subpoena</div>
+                    <div class="pronunciation">/səˈpiː.nə/ (সাবপিনা)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Summons</div>
+                        <div class="bengali-meaning">তলব</div>
+                    </div>
+                    <div class="example">The court issued a subpoena for records.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Suffrage</div>
+                    <div class="pronunciation">/ˈsʌf.rɪdʒ/ (সাফ্রেজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Voting right</div>
+                        <div class="bengali-meaning">ভোটাধিকার</div>
+                    </div>
+                    <div class="example">Universal suffrage was a historic win.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Term</div>
+                    <div class="pronunciation">/tɜːrm/ (টার্ম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Tenure</div>
+                        <div class="bengali-meaning">মেয়াদ</div>
+                    </div>
+                    <div class="example">The president served two terms.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Transparency</div>
+                    <div class="pronunciation">/trænsˈpær.ən.si/ (ট্রান্সপারেন্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Openness</div>
+                        <div class="bengali-meaning">স্বচ্ছতা</div>
+                    </div>
+                    <div class="example">The government promised greater transparency in spending.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Tyranny</div>
+                    <div class="pronunciation">/ˈtɪr.ə.ni/ (টিরানি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Oppression</div>
+                        <div class="bengali-meaning">অত্যাচার</div>
+                    </div>
+                    <div class="example">The regime’s tyranny sparked protests.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Veto</div>
+                    <div class="pronunciation">/ˈviː.toʊ/ (ভিটো)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Block</div>
+                        <div class="bengali-meaning">প্রতিবন্ধকতা</div>
+                    </div>
+                    <div class="example">The president used a veto to stop the bill.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Vetting</div>
+                    <div class="pronunciation">/ˈvet.ɪŋ/ (ভেটিং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Screening</div>
+                        <div class="bengali-meaning">যাচাই</div>
+                    </div>
+                    <div class="example">Candidates underwent rigorous vetting.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Whistleblower</div>
+                    <div class="pronunciation">/ˈwɪs.əlˌbloʊ.ər/ (হুইসেলব্লোয়ার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Informer</div>
+                        <div class="bengali-meaning">তথ্যদাতা</div>
+                    </div>
+                    <div class="example">The whistleblower exposed corruption.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Writ</div>
+                    <div class="pronunciation">/rɪt/ (রিট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Order</div>
+                        <div class="bengali-meaning">আদেশপত্র</div>
+                    </div>
+                    <div class="example">The court issued a writ to halt the project.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Zealot</div>
+                    <div class="pronunciation">/ˈzel.ət/ (জেলট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Fanatic</div>
+                        <div class="bengali-meaning">উৎসাহী</div>
+                    </div>
+                    <div class="example">Political zealots clashed at the rally.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Accord</div>
+                    <div class="pronunciation">/əˈkɔːrd/ (অ্যাকর্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Agreement</div>
+                        <div class="bengali-meaning">চুক্তি</div>
+                    </div>
+                    <div class="example">The accord resolved the labor dispute.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Backbencher</div>
+                    <div class="pronunciation">/ˈbækˌben.tʃər/ (ব্যাকবেঞ্চার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Junior MP</div>
+                        <div class="bengali-meaning">পশ্চাতের সাংসদ</div>
+                    </div>
+                    <div class="example">Backbenchers rebelled against the bill.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Cabal</div>
+                    <div class="pronunciation">/kəˈbæl/ (ক্যাবাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Clique</div>
+                        <div class="bengali-meaning">গোপন দল</div>
+                    </div>
+                    <div class="example">A cabal influenced policy decisions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Constituency</div>
+                    <div class="pronunciation">/kənˈstɪtʃ.u.ən.si/ (কনস্টিটুয়েন্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Voter group</div>
+                        <div class="bengali-meaning">নির্বাচনী এলাকা</div>
+                    </div>
+                    <div class="example">The MP addressed her constituency’s concerns.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- International Affairs -->
+        <div class="section" id="international">
+            <div class="section-header">আন্তর্জাতিক বিষয় (৫০ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Accord</div>
+                    <div class="pronunciation">/əˈkɔːrd/ (অ্যাকর্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Pact</div>
+                        <div class="bengali-meaning">চুক্তি</div>
+                    </div>
+                    <div class="example">The climate accord aimed to cut emissions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Annexation</div>
+                    <div class="pronunciation">/ˌæn.ekˈseɪ.ʃən/ (অ্যানেক্সেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Takeover</div>
+                        <div class="bengali-meaning">সংযোজন</div>
+                    </div>
+                    <div class="example">The annexation of territory sparked conflict.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Armistice</div>
+                    <div class="pronunciation">/ˈɑːr.mɪ.stɪs/ (আরমিস্টিস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Ceasefire</div>
+                        <div class="bengali-meaning">যুদ্ধবিরতি</div>
+                    </div>
+                    <div class="example">The armistice ended hostilities.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Asylum</div>
+                    <div class="pronunciation">/əˈsaɪ.ləm/ (অ্যাসাইলাম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Refuge</div>
+                        <div class="bengali-meaning">আশ্রয়</div>
+                    </div>
+                    <div class="example">Refugees sought asylum in Europe.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Atrocity</div>
+                    <div class="pronunciation">/əˈtrɒs.ɪ.ti/ (অ্যাট্রসিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cruelty</div>
+                        <div class="bengali-meaning">নৃশংসতা</div>
+                    </div>
+                    <div class="example">The atrocity shocked the international community.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bilateral</div>
+                    <div class="pronunciation">/baɪˈlæt.ər.əl/ (বাইল্যাটারাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Two-party</div>
+                        <div class="bengali-meaning">দ্বিপাক্ষিক</div>
+                    </div>
+                    <div class="example">The bilateral trade deal boosted exports.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bloc</div>
+                    <div class="pronunciation">/blɒk/ (ব্লক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Group</div>
+                        <div class="bengali-meaning">জোট</div>
+                    </div>
+                    <div class="example">The trade bloc imposed new tariffs.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Boycott</div>
+                    <div class="pronunciation">/ˈbɔɪ.kɒt/ (বয়কট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Refusal</div>
+                        <div class="bengali-meaning">বর্জন</div>
+                    </div>
+                    <div class="example">The boycott targeted foreign goods.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Brinkmanship</div>
+                    <div class="pronunciation">/ˈbrɪŋk.mən.ʃɪp/ (ব্রিঙ্কম্যানশিপ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Risky strategy</div>
+                        <div class="bengali-meaning">ঝুঁকিপূর্ণ কৌশল</div>
+                    </div>
+                    <div class="example">Brinkmanship heightened tensions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Buffer</div>
+                    <div class="pronunciation">/ˈbʌf.ər/ (বাফার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cushion</div>
+                        <div class="bengali-meaning">মধ্যবর্তী</div>
+                    </div>
+                    <div class="example">The country served as a buffer between rivals.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Coup</div>
+                    <div class="pronunciation">/kuː/ (কু)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Overthrow</div>
+                        <div class="bengali-meaning">অভ্যুত্থান</div>
+                    </div>
+                    <div class="example">The coup ousted the president.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Detente</div>
+                    <div class="pronunciation">/deɪˈtɑːnt/ (ডেটেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Easing tensions</div>
+                        <div class="bengali-meaning">উত্তেজনা হ্রাস</div>
+                    </div>
+                    <div class="example">The detente improved relations between rivals.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Deterrence</div>
+                    <div class="pronunciation">/dɪˈter.əns/ (ডিটারেন্স)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Prevention</div>
+                        <div class="bengali-meaning">নিরোধ</div>
+                    </div>
+                    <div class="example">Nuclear deterrence maintained peace.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Diplomacy</div>
+                    <div class="pronunciation">/dɪˈploʊ.mə.si/ (ডিপ্লোম্যাসি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Negotiation</div>
+                        <div class="bengali-meaning">কূটনীতি</div>
+                    </div>
+                    <div class="example">Diplomacy resolved the border dispute.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Disarmament</div>
+                    <div class="pronunciation">/dɪsˈɑːr.mə.mənt/ (ডিসার্মামেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Weapon reduction</div>
+                        <div class="bengali-meaning">নিরস্ত্রীকরণ</div>
+                    </div>
+                    <div class="example">Disarmament talks progressed slowly.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Embargo</div>
+                    <div class="pronunciation">/ɪmˈbɑːr.ɡoʊ/ (এমবার্গো)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Trade ban</div>
+                        <div class="bengali-meaning">নিষেধাজ্ঞা</div>
+                    </div>
+                    <div class="example">The oil embargo affected global markets.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Espionage</div>
+                    <div class="pronunciation">/ˈes.pi.ə.nɑːʒ/ (এসপিয়োনাজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Spying</div>
+                        <div class="bengali-meaning">গুপ্তচরবৃত্তি</div>
+                    </div>
+                    <div class="example">The scandal involved espionage.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Extradition</div>
+                    <div class="pronunciation">/ˌek.strəˈdɪʃ.ən/ (এক্সট্রাডিশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Deportation</div>
+                        <div class="bengali-meaning">প্রত্যর্পণ</div>
+                    </div>
+                    <div class="example">The suspect faced extradition to the US.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Federation</div>
+                    <div class="pronunciation">/ˌfed.əˈreɪ.ʃən/ (ফেডারেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Union</div>
+                        <div class="bengali-meaning">ফেডারেশন</div>
+                    </div>
+                    <div class="example">The federation united several states.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Genocide</div>
+                    <div class="pronunciation">/ˈdʒen.ə.saɪd/ (জেনোসাইড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Mass killing</div>
+                        <div class="bengali-meaning">গণহত্যা</div>
+                    </div>
+                    <div class="example">The tribunal prosecuted genocide charges.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Geopolitical</div>
+                    <div class="pronunciation">/ˌdʒiː.oʊ.pəˈlɪt.ɪ.kəl/ (জিওপলিটিক্যাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Global politics</div>
+                        <div class="bengali-meaning">ভূ-রাজনৈতিক</div>
+                    </div>
+                    <div class="example">Geopolitical tensions escalated in the region.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Hegemony</div>
+                    <div class="pronunciation">/hɪˈdʒem.ə.ni/ (হেজেমনি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Dominance</div>
+                        <div class="bengali-meaning">আধিপত্য</div>
+                    </div>
+                    <div class="example">The superpower’s hegemony shaped global trade.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Insurrection</div>
+                    <div class="pronunciation">/ˌɪn.səˈrek.ʃən/ (ইনসারেকশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Uprising</div>
+                        <div class="bengali-meaning">বিদ্রোহ</div>
+                    </div>
+                    <div class="example">The insurrection threatened stability.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Interventionism</div>
+                    <div class="pronunciation">/ˌɪn.tərˈven.ʃən.ɪz.əm/ (ইনটারভেনশনিজম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Interference</div>
+                        <div class="bengali-meaning">হস্তক্ষেপবাদ</div>
+                    </div>
+                    <div class="example">Interventionism divided global opinion.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Isolationism</div>
+                    <div class="pronunciation">/ˌaɪ.səˈleɪ.ʃən.ɪz.əm/ (আইসোলেশনিজম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Withdrawal</div>
+                        <div class="bengali-meaning">বিচ্ছিন্নতাবাদ</div>
+                    </div>
+                    <div class="example">Isolationism shaped the country’s policy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Mediation</div>
+                    <div class="pronunciation">/ˌmiː.diˈeɪ.ʃən/ (মিডিয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Negotiation</div>
+                        <div class="bengali-meaning">মধ্যস্থতা</div>
+                    </div>
+                    <div class="example">Mediation resolved the trade dispute.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Militia</div>
+                    <div class="pronunciation">/mɪˈlɪʃ.ə/ (মিলিশিয়া)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Armed group</div>
+                        <div class="bengali-meaning">মিলিশিয়া</div>
+                    </div>
+                    <div class="example">The militia clashed with troops.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Multilateral</div>
+                    <div class="pronunciation">/ˌmʌl.tiˈlæt.ər.əl/ (মালটিল্যাটারাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Multi-party</div>
+                        <div class="bengali-meaning">বহুপাক্ষিক</div>
+                    </div>
+                    <div class="example">The multilateral agreement promoted free trade.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Non-proliferation</div>
+                    <div class="pronunciation">/ˌnɒn.prəˌlɪf.əˈreɪ.ʃən/ (নন-প্রলিফারেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Weapon control</div>
+                        <div class="bengali-meaning">অপ্রসারণ</div>
+                    </div>
+                    <div class="example">Non-proliferation treaties limited nuclear arms.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Pariah</div>
+                    <div class="pronunciation">/pəˈraɪ.ə/ (প্যারাইয়া)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Outcast</div>
+                        <div class="bengali-meaning">নির্বাসিত</div>
+                    </div>
+                    <div class="example">The regime became a global pariah.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Partition</div>
+                    <div class="pronunciation">/pɑːrˈtɪʃ.ən/ (পার্টিশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Division</div>
+                        <div class="bengali-meaning">বিভাজন</div>
+                    </div>
+                    <div class="example">The partition created two nations.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Protocol</div>
+                    <div class="pronunciation">/ˈproʊ.tə.kɒl/ (প্রোটোকল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Agreement</div>
+                        <div class="bengali-meaning">প্রটোকল</div>
+                    </div>
+                    <div class="example">The protocol outlined trade rules.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Proxy</div>
+                    <div class="pronunciation">/ˈprɒk.si/ (প্রক্সি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Substitute</div>
+                        <div class="bengali-meaning">প্রতিনিধি</div>
+                    </div>
+                    <div class="example">The conflict involved proxy wars between nations.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Reconciliation</div>
+                    <div class="pronunciation">/ˌrek.ənˌsɪl.iˈeɪ.ʃən/ (রেকনসিলিয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Peace-making</div>
+                        <div class="bengali-meaning">পুনর্মিলন</div>
+                    </div>
+                    <div class="example">Reconciliation followed years of conflict.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Repatriation</div>
+                    <div class="pronunciation">/riːˌpæt.riˈeɪ.ʃən/ (রিপ্যাট্রিয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Return</div>
+                        <div class="bengali-meaning">প্রত্যাবর্তন</div>
+                    </div>
+                    <div class="example">Repatriation of refugees began slowly.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Retaliation</div>
+                    <div class="pronunciation">/rɪˌtæl.iˈeɪ.ʃən/ (রিট্যালিয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Revenge</div>
+                        <div class="bengali-meaning">প্রতিশোধ</div>
+                    </div>
+                    <div class="example">The country vowed retaliation after the attack.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Rogue</div>
+                    <div class="pronunciation">/roʊɡ/ (রোগ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Outlaw</div>
+                        <div class="bengali-meaning">বিপথগামী</div>
+                    </div>
+                    <div class="example">The rogue state defied UN resolutions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Sabotage</div>
+                    <div class="pronunciation">/ˈsæb.ə.tɑːʒ/ (স্যাবোটাজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Destruction</div>
+                        <div class="bengali-meaning">ধ্বংস</div>
+                    </div>
+                    <div class="example">Sabotage disrupted the peace talks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Separatist</div>
+                    <div class="pronunciation">/ˈsep.ər.ə.tɪst/ (সেপারেটিস্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Rebel</div>
+                        <div class="bengali-meaning">বিচ্ছিন্নতাবাদী</div>
+                    </div>
+                    <div class="example">Separatists demanded independence.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Standoff</div>
+                    <div class="pronunciation">/ˈstænd.ɒf/ (স্ট্যান্ডঅফ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Deadlock</div>
+                        <div class="bengali-meaning">অচলাবস্থা</div>
+                    </div>
+                    <div class="example">The border standoff lasted weeks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Succession</div>
+                    <div class="pronunciation">/səkˈseʃ.ən/ (সাকসেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Inheritance</div>
+                        <div class="bengali-meaning">উত্তরাধিকার</div>
+                    </div>
+                    <div class="example">The succession crisis destabilized the monarchy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Summit</div>
+                    <div class="pronunciation">/ˈsʌm.ɪt/ (সামিট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Meeting</div>
+                        <div class="bengali-meaning">শীর্ষ সম্মেলন</div>
+                    </div>
+                    <div class="example">World leaders attended the climate summit.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Supremacy</div>
+                    <div class="pronunciation">/səˈprem.ə.si/ (সুপ্রিম্যাসি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Dominance</div>
+                        <div class="bengali-meaning">আধিপত্য</div>
+                    </div>
+                    <div class="example">The navy maintained maritime supremacy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Treaty</div>
+                    <div class="pronunciation">/ˈtriː.ti/ (ট্রিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Agreement</div>
+                        <div class="bengali-meaning">চুক্তি</div>
+                    </div>
+                    <div class="example">The peace treaty ended decades of conflict.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Truce</div>
+                    <div class="pronunciation">/truːs/ (ট্রুস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Ceasefire</div>
+                        <div class="bengali-meaning">যুদ্ধবিরতি</div>
+                    </div>
+                    <div class="example">The truce allowed aid deliveries.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Ultimatum</div>
+                    <div class="pronunciation">/ˌʌl.tɪˈmeɪ.təm/ (আলটিমেটাম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Final demand</div>
+                        <div class="bengali-meaning">চূড়ান্ত দাবি</div>
+                    </div>
+                    <div class="example">The government issued an ultimatum to rebels.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Unilateral</div>
+                    <div class="pronunciation">/ˌjuː.nɪˈlæt.ər.əl/ (ইউনিল্যাটারাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">One-sided</div>
+                        <div class="bengali-meaning">একতরফা</div>
+                    </div>
+                    <div class="example">The country took unilateral action.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Visa</div>
+                    <div class="pronunciation">/ˈviː.zə/ (ভিসা)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Permit</div>
+                        <div class="bengali-meaning">ভিসা</div>
+                    </div>
+                    <div class="example">The new visa policy eased travel.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Warlord</div>
+                    <div class="pronunciation">/ˈwɔːr.lɔːrd/ (ওয়ারলর্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Military leader</div>
+                        <div class="bengali-meaning">সেনানায়ক</div>
+                    </div>
+                    <div class="example">Warlords controlled rural areas.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Xenophobia</div>
+                    <div class="pronunciation">/ˌzen.əˈfoʊ.bi.ə/ (জেনোফোবিয়া)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Fear of foreigners</div>
+                        <div class="bengali-meaning">বিদেশীভীতি</div>
+                    </div>
+                    <div class="example">Xenophobia fueled anti-immigrant policies.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- General News Reporting -->
+        <div class="section" id="general">
+            <div class="section-header">সাধারণ সংবাদ প্রতিবেদন (৪০ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Alleged</div>
+                    <div class="pronunciation">/əˈledʒd/ (অ্যালেজড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Claimed</div>
+                        <div class="bengali-meaning">অভিযুক্ত</div>
+                    </div>
+                    <div class="example">The alleged corruption sparked an investigation.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Backlash</div>
+                    <div class="pronunciation">/ˈbæk.læʃ/ (ব্যাকল্যাশ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Reaction</div>
+                        <div class="bengali-meaning">প্রতিক্রিয়া</div>
+                    </div>
+                    <div class="example">The policy faced a public backlash.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Byline</div>
+                    <div class="pronunciation">/ˈbaɪ.laɪn/ (বাইলাইন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Author name</div>
+                        <div class="bengali-meaning">লেখকের নাম</div>
+                    </div>
+                    <div class="example">The article carried a prominent byline.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Censor</div>
+                    <div class="pronunciation">/ˈsen.sər/ (সেন্সর)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Suppress</div>
+                        <div class="bengali-meaning">সেন্সর</div>
+                    </div>
+                    <div class="example">The government censored the report.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Clamor</div>
+                    <div class="pronunciation">/ˈklæm.ər/ (ক্ল্যামর)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Outcry</div>
+                        <div class="bengali-meaning">হৈচৈ</div>
+                    </div>
+                    <div class="example">The clamor for reform grew louder.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Contention</div>
+                    <div class="pronunciation">/kənˈten.ʃən/ (কনটেনশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Dispute</div>
+                        <div class="bengali-meaning">বিতর্ক</div>
+                    </div>
+                    <div class="example">The issue remains a point of contention.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Debacle</div>
+                    <div class="pronunciation">/dɪˈbɑː.kəl/ (ডিব্যাকল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Failure</div>
+                        <div class="bengali-meaning">বিপর্যয়</div>
+                    </div>
+                    <div class="example">The policy was a complete debacle.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Defamation</div>
+                    <div class="pronunciation">/ˌdef.əˈmeɪ.ʃən/ (ডিফ্যামেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Slander</div>
+                        <div class="bengali-meaning">মানহানি</div>
+                    </div>
+                    <div class="example">The politician sued for defamation.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Disclosure</div>
+                    <div class="pronunciation">/dɪsˈkloʊ.ʒər/ (ডিসক্লোজার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Revelation</div>
+                        <div class="bengali-meaning">প্রকাশ</div>
+                    </div>
+                    <div class="example">The disclosure shocked investors.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Embattled</div>
+                    <div class="pronunciation">/ɪmˈbæt.əld/ (এমব্যাটল্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Under attack</div>
+                        <div class="bengali-meaning">বিপর্যস্ত</div>
+                    </div>
+                    <div class="example">The embattled leader faced protests.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Escalation</div>
+                    <div class="pronunciation">/ˌes.kəˈleɪ.ʃən/ (এসক্যালেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Increase</div>
+                        <div class="bengali-meaning">বৃদ্ধি</div>
+                    </div>
+                    <div class="example">The escalation of violence alarmed observers.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Fallout</div>
+                    <div class="pronunciation">/ˈfɔːl.aʊt/ (ফলআউট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Consequences</div>
+                        <div class="bengali-meaning">পরিণতি</div>
+                    </div>
+                    <div class="example">The scandal’s fallout damaged the party’s reputation.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Frenzy</div>
+                    <div class="pronunciation">/ˈfren.zi/ (ফ্রেনজি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Hysteria</div>
+                        <div class="bengali-meaning">উন্মাদনা</div>
+                    </div>
+                    <div class="example">The news sparked a media frenzy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Hoax</div>
+                    <div class="pronunciation">/hoʊks/ (হোক্স)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Prank</div>
+                        <div class="bengali-meaning">প্রতারণা</div>
+                    </div>
+                    <div class="example">The bomb threat was a hoax.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Hype</div>
+                    <div class="pronunciation">/haɪp/ (হাইপ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Exaggeration</div>
+                        <div class="bengali-meaning">অতিরঞ্জন</div>
+                    </div>
+                    <div class="example">The product launch was surrounded by hype.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Injunction</div>
+                    <div class="pronunciation">/ɪnˈdʒʌŋk.ʃən/ (ইনজাঙ্কশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Order</div>
+                        <div class="bengali-meaning">নিষেধাজ্ঞা</div>
+                    </div>
+                    <div class="example">The court issued an injunction against the strike.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Leak</div>
+                    <div class="pronunciation">/liːk/ (লিক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Exposure</div>
+                        <div class="bengali-meaning">ফাঁস</div>
+                    </div>
+                    <div class="example">The leak revealed secret plans.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Misinformation</div>
+                    <div class="pronunciation">/ˌmɪs.ɪn.fərˈmeɪ.ʃən/ (মিসইনফরমেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">False news</div>
+                        <div class="bengali-meaning">ভুল তথ্য</div>
+                    </div>
+                    <div class="example">Misinformation spread rapidly online.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Narrative</div>
+                    <div class="pronunciation">/ˈnær.ə.tɪv/ (ন্যারেটিভ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Story</div>
+                        <div class="bengali-meaning">বর্ণনা</div>
+                    </div>
+                    <div class="example">The media shaped the narrative around the crisis.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Op-ed</div>
+                    <div class="pronunciation">/ˈɒp.ɛd/ (অপ-এড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Opinion piece</div>
+                        <div class="bengali-meaning">মতামত</div>
+                    </div>
+                    <div class="example">The op-ed criticized government policy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Plummet</div>
+                    <div class="pronunciation">/ˈplʌm.ɪt/ (প্লামিট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Drop</div>
+                        <div class="bengali-meaning">হ্রাস</div>
+                    </div>
+                    <div class="example">Share prices plummeted after the news.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Probe</div>
+                    <div class="pronunciation">/proʊb/ (প্রোব)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Investigation</div>
+                        <div class="bengali-meaning">তদন্ত</div>
+                    </div>
+                    <div class="example">Authorities launched a probe into the fraud.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Rebuttal</div>
+                    <div class="pronunciation">/rɪˈbʌt.əl/ (রিবাটাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Counterargument</div>
+                        <div class="bengali-meaning">খণ্ডন</div>
+                    </div>
+                    <div class="example">The company issued a rebuttal to the claims.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Retraction</div>
+                    <div class="pronunciation">/rɪˈtræk.ʃən/ (রিট্র্যাকশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Withdrawal</div>
+                        <div class="bengali-meaning">প্রত্যাহার</div>
+                    </div>
+                    <div class="example">The newspaper published a retraction.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Scoop</div>
+                    <div class="pronunciation">/skuːp/ (স্কুপ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Exclusive</div>
+                        <div class="bengali-meaning">একচেটিয়া খবর</div>
+                    </div>
+                    <div class="example">The journalist landed a major scoop.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Scrutiny</div>
+                    <div class="pronunciation">/ˈskruː.tɪ.ni/ (স্ক্রুটিনি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Examination</div>
+                        <div class="bengali-meaning">পরীক্ষা</div>
+                    </div>
+                    <div class="example">The deal came under intense scrutiny.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Sensationalism</div>
+                    <div class="pronunciation">/senˈseɪ.ʃən.əl.ɪz.əm/ (সেনসেশনালিজম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Exaggeration</div>
+                        <div class="bengali-meaning">সংবেদনশীলতা</div>
+                    </div>
+                    <div class="example">Sensationalism dominated the headlines.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Slander</div>
+                    <div class="pronunciation">/ˈslæn.dər/ (স্ল্যান্ডার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">False statement</div>
+                        <div class="bengali-meaning">অপবাদ</div>
+                    </div>
+                    <div class="example">The celebrity sued for slander.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Source</div>
+                    <div class="pronunciation">/sɔːrs/ (সোর্স)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Informant</div>
+                        <div class="bengali-meaning">উৎস</div>
+                    </div>
+                    <div class="example">Anonymous sources confirmed the story.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Speculation</div>
+                    <div class="pronunciation">/ˌspek.jəˈleɪ.ʃən/ (স্পেকুলেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Guess</div>
+                        <div class="bengali-meaning">অনুমান</div>
+                    </div>
+                    <div class="example">Speculation grew about the election outcome.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Spin</div>
+                    <div class="pronunciation">/spɪn/ (স্পিন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Twist</div>
+                        <div class="bengali-meaning">ব্যাখ্যা</div>
+                    </div>
+                    <div class="example">The politician put a positive spin on the scandal.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Surge</div>
+                    <div class="pronunciation">/sɜːrdʒ/ (সার্জ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Increase</div>
+                        <div class="bengali-meaning">বৃদ্ধি</div>
+                    </div>
+                    <div class="example">Crime rates surged in the city.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Tabloid</div>
+                    <div class="pronunciation">/ˈtæb.lɔɪd/ (ট্যাবলয়েড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Gossip paper</div>
+                        <div class="bengali-meaning">সংবাদপত্র</div>
+                    </div>
+                    <div class="example">The tabloid published wild rumors.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Testimony</div>
+                    <div class="pronunciation">/ˈtes.tɪ.moʊ.ni/ (টেস্টিমোনি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Statement</div>
+                        <div class="bengali-meaning">সাক্ষ্য</div>
+                    </div>
+                    <div class="example">The witness gave testimony in court.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Turmoil</div>
+                    <div class="pronunciation">/ˈtɜːr.mɔɪl/ (টার্ময়েল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Chaos</div>
+                        <div class="bengali-meaning">অশান্তি</div>
+                    </div>
+                    <div class="example">The country descended into political turmoil.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Uproar</div>
+                    <div class="pronunciation">/ˈʌp.rɔːr/ (আপরোর)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Outrage</div>
+                        <div class="bengali-meaning">হট্টগোল</div>
+                    </div>
+                    <div class="example">The decision caused public uproar.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Vague</div>
+                    <div class="pronunciation">/veɪɡ/ (ভেইগ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Unclear</div>
+                        <div class="bengali-meaning">অস্পষ্ট</div>
+                    </div>
+                    <div class="example">The official’s statement was deliberately vague.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Verify</div>
+                    <div class="pronunciation">/ˈver.ɪ.faɪ/ (ভেরিফাই)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Confirm</div>
+                        <div class="bengali-meaning">যাচাই</div>
+                    </div>
+                    <div class="example">The newspaper verified the claims.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Whistleblowing</div>
+                    <div class="pronunciation">/ˈwɪs.əlˌbloʊ.ɪŋ/ (হুইসেলব্লোয়িং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Exposing</div>
+                        <div class="bengali-meaning">তথ্য ফাঁস</div>
+                    </div>
+                    <div class="example">Whistleblowing exposed corporate fraud.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business and Markets -->
+        <div class="section" id="business">
+            <div class="section-header">ব্যবসা ও বাজার (৩০ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Acquisition</div>
+                    <div class="pronunciation">/ˌæk.wɪˈzɪʃ.ən/ (অ্যাকুইজিশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Takeover</div>
+                        <div class="bengali-meaning">অধিগ্রহণ</div>
+                    </div>
+                    <div class="example">The acquisition boosted the company’s market share.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bankruptcy</div>
+                    <div class="pronunciation">/ˈbæŋk.rʌpt.si/ (ব্যাঙ্করাপ্টসি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Insolvency</div>
+                        <div class="bengali-meaning">দেউলিয়াত্ব</div>
+                    </div>
+                    <div class="example">The retailer filed for bankruptcy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Brand</div>
+                    <div class="pronunciation">/brænd/ (ব্র্যান্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Label</div>
+                        <div class="bengali-meaning">ব্র্যান্ড</div>
+                    </div>
+                    <div class="example">The brand’s reputation attracted customers.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Conglomerate</div>
+                    <div class="pronunciation">/kənˈɡlɒm.ər.ət/ (কংগ্লমারেট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Corporation</div>
+                        <div class="bengali-meaning">সমষ্টি</div>
+                    </div>
+                    <div class="example">The conglomerate owned diverse businesses.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Default</div>
+                    <div class="pronunciation">/dɪˈfɔːlt/ (ডিফল্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Non-payment</div>
+                        <div class="bengali-meaning">খেলাপ</div>
+                    </div>
+                    <div class="example">The country risked defaulting on its debt.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Diversification</div>
+                    <div class="pronunciation">/daɪˌvɜːr.sɪ.fɪˈkeɪ.ʃən/ (ডাইভারসিফিকেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Variety</div>
+                        <div class="bengali-meaning">বৈচিত্র্য</div>
+                    </div>
+                    <div class="example">Diversification reduced business risks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Dividend</div>
+                    <div class="pronunciation">/ˈdɪv.ɪ.dend/ (ডিভিডেন্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Profit share</div>
+                        <div class="bengali-meaning">লভ্যাংশ</div>
+                    </div>
+                    <div class="example">Shareholders received a dividend.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Franchise</div>
+                    <div class="pronunciation">/ˈfræn.tʃaɪz/ (ফ্র্যাঞ্চাইজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">License</div>
+                        <div class="bengali-meaning">ফ্র্যাঞ্চাইজি</div>
+                    </div>
+                    <div class="example">The franchise expanded globally.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Hostile</div>
+                    <div class="pronunciation">/ˈhɒs.taɪl/ (হসটাইল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Aggressive</div>
+                        <div class="bengali-meaning">শত্রুতাপূর্ণ</div>
+                    </div>
+                    <div class="example">The company faced a hostile takeover bid.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Initial</div>
+                    <div class="pronunciation">/ɪˈnɪʃ.əl/ (ইনিশিয়াল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Starting</div>
+                        <div class="bengali-meaning">প্রাথমিক</div>
+                    </div>
+                    <div class="example">The initial public offering raised millions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Innovation</div>
+                    <div class="pronunciation">/ˌɪn.əˈveɪ.ʃən/ (ইনোভেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Invention</div>
+                        <div class="bengali-meaning">উদ্ভাবন</div>
+                    </div>
+                    <div class="example">Innovation drove the tech sector’s growth.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Liquidation</div>
+                    <div class="pronunciation">/ˌlɪk.wɪˈdeɪ.ʃən/ (লিকুইডেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Sell-off</div>
+                        <div class="bengali-meaning">পরিশোধ</div>
+                    </div>
+                    <div class="example">The firm entered liquidation after losses.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Outsourcing</div>
+                    <div class="pronunciation">/ˈaʊtˌsɔːr.sɪŋ/ (আউটসোর্সিং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Contracting out</div>
+                        <div class="bengali-meaning">বহির্ভূতকরণ</div>
+                    </div>
+                    <div class="example">Outsourcing cut operational costs.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Patent</div>
+                    <div class="pronunciation">/ˈpæt.ənt/ (প্যাটেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Copyright</div>
+                        <div class="bengali-meaning">পেটেন্ট</div>
+                    </div>
+                    <div class="example">The company secured a patent for its product.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Restructuring</div>
+                    <div class="pronunciation">/riːˈstrʌk.tʃər.ɪŋ/ (রিস্ট্রাকচারিং)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Reorganization</div>
+                        <div class="bengali-meaning">পুনর্গঠন</div>
+                    </div>
+                    <div class="example">The restructuring saved jobs.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Retail</div>
+                    <div class="pronunciation">/ˈriː.teɪl/ (রিটেল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Sales</div>
+                        <div class="bengali-meaning">খুচরা</div>
+                    </div>
+                    <div class="example">Retail sales slumped during the recession.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Revenue</div>
+                    <div class="pronunciation">/ˈrev.ə.nuː/ (রেভেনিউ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Earnings</div>
+                        <div class="bengali-meaning">আয়</div>
+                    </div>
+                    <div class="example">The company reported record revenue.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Shareholder</div>
+                    <div class="pronunciation">/ˈʃer.hoʊl.dər/ (শেয়ারহোল্ডার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Investor</div>
+                        <div class="bengali-meaning">শেয়ারহোল্ডার</div>
+                    </div>
+                    <div class="example">Shareholders demanded higher dividends.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Startup</div>
+                    <div class="pronunciation">/ˈstɑːrt.ʌp/ (স্টার্টআপ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">New business</div>
+                        <div class="bengali-meaning">স্টার্টআপ</div>
+                    </div>
+                    <div class="example">The startup attracted venture capital.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Subsidy</div>
+                    <div class="pronunciation">/ˈsʌb.sɪ.di/ (সাবসিডি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Grant</div>
+                        <div class="bengali-meaning">ভর্তুকি</div>
+                    </div>
+                    <div class="example">The industry relied on government subsidies.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Supply</div>
+                    <div class="pronunciation">/səˈplaɪ/ (সাপ্লাই)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Stock</div>
+                        <div class="bengali-meaning">সরবরাহ</div>
+                    </div>
+                    <div class="example">Supply chain issues delayed production.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Synergy</div>
+                    <div class="pronunciation">/ˈsɪn.ər.dʒi/ (সিনার্জি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Cooperation</div>
+                        <div class="bengali-meaning">সমন্বয়</div>
+                    </div>
+                    <div class="example">The merger created synergy between firms.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Tariff</div>
+                    <div class="pronunciation">/ˈtær.ɪf/ (ট্যারিফ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Duty</div>
+                        <div class="bengali-meaning">শুল্ক</div>
+                    </div>
+                    <div class="example">Tariffs raised the cost of imports.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Tender</div>
+                    <div class="pronunciation">/ˈten.dər/ (টেন্ডার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Offer</div>
+                        <div class="bengali-meaning">দরপত্র</div>
+                    </div>
+                    <div class="example">The company submitted a tender for the contract.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Trade</div>
+                    <div class="pronunciation">/treɪd/ (ট্রেড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Commerce</div>
+                        <div class="bengali-meaning">বাণিজ্য</div>
+                    </div>
+                    <div class="example">Trade agreements opened new markets.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Turnaround</div>
+                    <div class="pronunciation">/ˈtɜːrn.ə.raʊnd/ (টার্নারাউন্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Recovery</div>
+                        <div class="bengali-meaning">পুনরুদ্ধার</div>
+                    </div>
+                    <div class="example">The CEO led a successful turnaround.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Valuation</div>
+                    <div class="pronunciation">/ˌvæl.juˈeɪ.ʃən/ (ভ্যালুয়েশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Worth</div>
+                        <div class="bengali-meaning">মূল্যায়ন</div>
+                    </div>
+                    <div class="example">The startup’s valuation soared.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Venture</div>
+                    <div class="pronunciation">/ˈven.tʃər/ (ভেনচার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Project</div>
+                        <div class="bengali-meaning">উদ্যোগ</div>
+                    </div>
+                    <div class="example">The venture aimed to disrupt the market.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Volatility</div>
+                    <div class="pronunciation">/ˌvɒl.əˈtɪl.ɪ.ti/ (ভলাটিলিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Fluctuation</div>
+                        <div class="bengali-meaning">অস্থিরতা</div>
+                    </div>
+                    <div class="example">Market volatility unnerved investors.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Yield</div>
+                    <div class="pronunciation">/jiːld/ (ইয়েল্ড)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Profit</div>
+                        <div class="bengali-meaning">ফলন</div>
+                    </div>
+                    <div class="example">The investment offered a high yield.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Issues -->
+        <div class="section" id="social">
+            <div class="section-header">সামাজিক বিষয় (২০ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Advocacy</div>
+                    <div class="pronunciation">/ˈæd.və.kə.si/ (অ্যাডভোকেসি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Support</div>
+                        <div class="bengali-meaning">পক্ষপাতিত্ব</div>
+                    </div>
+                    <div class="example">Advocacy groups pushed for reform.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Alienation</div>
+                    <div class="pronunciation">/ˌeɪ.li.əˈneɪ.ʃən/ (এলিয়েনেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Isolation</div>
+                        <div class="bengali-meaning">বিচ্ছিন্নতা</div>
+                    </div>
+                    <div class="example">Social alienation fueled unrest.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Assimilation</div>
+                    <div class="pronunciation">/əˌsɪm.ɪˈleɪ.ʃən/ (অ্যাসিমিলেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Integration</div>
+                        <div class="bengali-meaning">একীকরণ</div>
+                    </div>
+                    <div class="example">Assimilation policies sparked debate.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Disparity</div>
+                    <div class="pronunciation">/dɪˈspær.ɪ.ti/ (ডিসপ্যারিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Gap</div>
+                        <div class="bengali-meaning">বৈষম্য</div>
+                    </div>
+                    <div class="example">Income disparity widened over decades.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Displacement</div>
+                    <div class="pronunciation">/dɪsˈpleɪs.mənt/ (ডিসপ্লেসমেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Relocation</div>
+                        <div class="bengali-meaning">বাস্তুচ্যুতি</div>
+                    </div>
+                    <div class="example">Conflict caused mass displacement.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Empowerment</div>
+                    <div class="pronunciation">/ɪmˈpaʊ.ər.mənt/ (এমপাওয়ারমেন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Strengthening</div>
+                        <div class="bengali-meaning">ক্ষমতায়ন</div>
+                    </div>
+                    <div class="example">The program focused on women’s empowerment.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Exclusion</div>
+                    <div class="pronunciation">/ɪkˈskluː.ʒən/ (এক্সক্লুশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Rejection</div>
+                        <div class="bengali-meaning">বর্জন</div>
+                    </div>
+                    <div class="example">Social exclusion harmed marginalized groups.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Gentrification</div>
+                    <div class="pronunciation">/ˌdʒen.trɪ.fɪˈkeɪ.ʃən/ (জেনট্রিফিকেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Urban renewal</div>
+                        <div class="bengali-meaning">অভিজাতকরণ</div>
+                    </div>
+                    <div class="example">Gentrification displaced low-income residents.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Grassroots</div>
+                    <div class="pronunciation">/ˈɡræs.ruːts/ (গ্রাসরুটস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Community-based</div>
+                        <div class="bengali-meaning">তৃণমূল</div>
+                    </div>
+                    <div class="example">The grassroots movement gained momentum.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Inclusion</div>
+                    <div class="pronunciation">/ɪnˈkluː.ʒən/ (ইনক্লুশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Acceptance</div>
+                        <div class="bengali-meaning">সম্মিলন</div>
+                    </div>
+                    <div class="example">The policy promoted social inclusion.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Marginalization</div>
+                    <div class="pronunciation">/ˌmɑːr.dʒɪ.nə.ləˈzeɪ.ʃən/ (মার্জিনালাইজেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Neglect</div>
+                        <div class="bengali-meaning">প্রান্তিকীকরণ</div>
+                    </div>
+                    <div class="example">Marginalization affected rural communities.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Migration</div>
+                    <div class="pronunciation">/maɪˈɡreɪ.ʃən/ (মাইগ্রেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Movement</div>
+                        <div class="bengali-meaning">অভিবাসন</div>
+                    </div>
+                    <div class="example">Migration patterns shifted due to climate change.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Philanthropy</div>
+                    <div class="pronunciation">/fɪˈlæn.θrə.pi/ (ফিল্যানথ্রপি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Charity</div>
+                        <div class="bengali-meaning">দানশীলতা</div>
+                    </div>
+                    <div class="example">Philanthropy funded education programs.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Prejudice</div>
+                    <div class="pronunciation">/ˈpredʒ.ə.dɪs/ (প্রেজুডিস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Bias</div>
+                        <div class="bengali-meaning">পক্ষপাত</div>
+                    </div>
+                    <div class="example">Prejudice hindered social progress.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Redistribution</div>
+                    <div class="pronunciation">/ˌriː.dɪs.trɪˈbjuː.ʃən/ (রিডিস্ট্রিবিউশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Reallocation</div>
+                        <div class="bengali-meaning">পুনর্বণ্টন</div>
+                    </div>
+                    <div class="example">Wealth redistribution sparked controversy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Segregation</div>
+                    <div class="pronunciation">/ˌseɡ.rɪˈɡeɪ.ʃən/ (সেগ্রিগেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Separation</div>
+                        <div class="bengali-meaning">বিচ্ছেদ</div>
+                    </div>
+                    <div class="example">Segregation persisted in housing.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Solidarity</div>
+                    <div class="pronunciation">/ˌsɒl.ɪˈdær.ɪ.ti/ (সলিডারিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Unity</div>
+                        <div class="bengali-meaning">সংহতি</div>
+                    </div>
+                    <div class="example">Workers showed solidarity during the strike.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Stigma</div>
+                    <div class="pronunciation">/ˈstɪɡ.mə/ (স্টিগমা)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Shame</div>
+                        <div class="bengali-meaning">কলঙ্ক</div>
+                    </div>
+                    <div class="example">The stigma around mental health persisted.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Subsidy</div>
+                    <div class="pronunciation">/ˈsʌb.sɪ.di/ (সাবসিডি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Aid</div>
+                        <div class="bengali-meaning">ভর্তুকি</div>
+                    </div>
+                    <div class="example">Subsidies supported low-income families.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Upheaval</div>
+                    <div class="pronunciation">/ʌpˈhiː.vəl/ (আপহিভাল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Disruption</div>
+                        <div class="bengali-meaning">উত্থান</div>
+                    </div>
+                    <div class="example">Social upheaval followed the policy change.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environment and Technology -->
+        <div class="section" id="environment">
+            <div class="section-header">পরিবেশ ও প্রযুক্তি (২০ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Biodiversity</div>
+                    <div class="pronunciation">/ˌbaɪ.oʊ.dɪˈvɜːr.sɪ.ti/ (বায়োডাইভারসিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Variety</div>
+                        <div class="bengali-meaning">জীববৈচিত্র্য</div>
+                    </div>
+                    <div class="example">Deforestation threatened biodiversity.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Carbon</div>
+                    <div class="pronunciation">/ˈkɑːr.bən/ (কার্বন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Emissions</div>
+                        <div class="bengali-meaning">কার্বন</div>
+                    </div>
+                    <div class="example">Carbon taxes aimed to reduce emissions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Conservation</div>
+                    <div class="pronunciation">/ˌkɒn.sərˈveɪ.ʃən/ (কনজারভেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Protection</div>
+                        <div class="bengali-meaning">সংরক্ষণ</div>
+                    </div>
+                    <div class="example">Conservation efforts saved endangered species.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Deforestation</div>
+                    <div class="pronunciation">/diːˌfɔːr.ɪˈsteɪ.ʃən/ (ডিফরেস্টেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Tree loss</div>
+                        <div class="bengali-meaning">বন উজাড়</div>
+                    </div>
+                    <div class="example">Deforestation harmed ecosystems.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Drought</div>
+                    <div class="pronunciation">/draʊt/ (ড্রাউট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Dry spell</div>
+                        <div class="bengali-meaning">খরা</div>
+                    </div>
+                    <div class="example">The drought devastated agriculture.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Emissions</div>
+                    <div class="pronunciation">/ɪˈmɪʃ.ənz/ (ইমিশন্স)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Pollution</div>
+                        <div class="bengali-meaning">নির্গমন</div>
+                    </div>
+                    <div class="example">Emissions fell after new regulations.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Erosion</div>
+                    <div class="pronunciation">/ɪˈroʊ.ʒən/ (ইরোশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Wear</div>
+                        <div class="bengali-meaning">ক্ষয়</div>
+                    </div>
+                    <div class="example">Soil erosion threatened farmland.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Footprint</div>
+                    <div class="pronunciation">/ˈfʊt.prɪnt/ (ফুটপ্রিন্ট)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Impact</div>
+                        <div class="bengali-meaning">পদচিহ্ন</div>
+                    </div>
+                    <div class="example">The company reduced its carbon footprint.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Mitigation</div>
+                    <div class="pronunciation">/ˌmɪt.ɪˈɡeɪ.ʃən/ (মিটিগেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Reduction</div>
+                        <div class="bengali-meaning">প্রশমন</div>
+                    </div>
+                    <div class="example">Mitigation strategies addressed climate change.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Renewable</div>
+                    <div class="pronunciation">/rɪˈnuː.ə.bəl/ (রিনিউয়েবল)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Sustainable</div>
+                        <div class="bengali-meaning">নবায়নযোগ্য</div>
+                    </div>
+                    <div class="example">Renewable energy powered the grid.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Algorithm</div>
+                    <div class="pronunciation">/ˈæl.ɡə.rɪ.ðəm/ (অ্যালগরিদম)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Formula</div>
+                        <div class="bengali-meaning">অ্যালগরিদম</div>
+                    </div>
+                    <div class="example">The algorithm optimized search results.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Automation</div>
+                    <div class="pronunciation">/ˌɔː.təˈmeɪ.ʃən/ (অটোমেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Mechanization</div>
+                        <div class="bengali-meaning">স্বয়ংক্রিয়তা</div>
+                    </div>
+                    <div class="example">Automation displaced factory workers.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Bandwidth</div>
+                    <div class="pronunciation">/ˈbænd.wɪdθ/ (ব্যান্ডউইদ্থ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Capacity</div>
+                        <div class="bengali-meaning">ব্যান্ডউইথ</div>
+                    </div>
+                    <div class="example">The network’s bandwidth was upgraded.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Blockchain</div>
+                    <div class="pronunciation">/ˈblɒk.tʃeɪn/ (ব্লকচেইন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Ledger</div>
+                        <div class="bengali-meaning">ব্লকচেইন</div>
+                    </div>
+                    <div class="example">Blockchain secured financial transactions.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Cybersecurity</div>
+                    <div class="pronunciation">/ˌsaɪ.bər.sɪˈkjʊr.ɪ.ti/ (সাইবারসিকিউরিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Protection</div>
+                        <div class="bengali-meaning">সাইবার নিরাপত্তা</div>
+                    </div>
+                    <div class="example">Cybersecurity breaches exposed data.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Disruption</div>
+                    <div class="pronunciation">/dɪsˈrʌp.ʃən/ (ডিসরাপশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Change</div>
+                        <div class="bengali-meaning">বিঘ্ন</div>
+                    </div>
+                    <div class="example">The startup caused industry disruption.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Encryption</div>
+                    <div class="pronunciation">/ɪnˈkrɪp.ʃən/ (এনক্রিপশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Coding</div>
+                        <div class="bengali-meaning">এনক্রিপশন</div>
+                    </div>
+                    <div class="example">Encryption protected sensitive data.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Infrastructure</div>
+                    <div class="pronunciation">/ˈɪn.frəˌstrʌk.tʃər/ (ইনফ্রাস্ট্রাকচার)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Framework</div>
+                        <div class="bengali-meaning">অবকাঠামো</div>
+                    </div>
+                    <div class="example">The city upgraded its digital infrastructure.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Innovation</div>
+                    <div class="pronunciation">/ˌɪn.əˈveɪ.ʃən/ (ইনোভেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Invention</div>
+                        <div class="bengali-meaning">উদ্ভাবন</div>
+                    </div>
+                    <div class="example">Innovation transformed renewable energy.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Sustainability</div>
+                    <div class="pronunciation">/səˌsteɪ.nəˈbɪl.ɪ.ti/ (সাসটেইনেবিলিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Endurance</div>
+                        <div class="bengali-meaning">টেকসইতা</div>
+                    </div>
+                    <div class="example">Sustainability guided corporate policies.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Health and Science -->
+        <div class="section" id="health">
+            <div class="section-header">স্বাস্থ্য ও বিজ্ঞান (২০ শব্দ)</div>
+            <div class="term-grid">
+                <div class="term-card">
+                    <div class="term-name">Antibiotic</div>
+                    <div class="pronunciation">/ˌæn.ti.baɪˈɒt.ɪk/ (অ্যান্টিবায়োটিক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Medicine</div>
+                        <div class="bengali-meaning">অ্যান্টিবায়োটিক</div>
+                    </div>
+                    <div class="example">Antibiotics treated the infection.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Breakthrough</div>
+                    <div class="pronunciation">/ˈbreɪk.θruː/ (ব্রেকথ্রু)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Discovery</div>
+                        <div class="bengali-meaning">অগ্রগতি</div>
+                    </div>
+                    <div class="example">The vaccine was a major breakthrough.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Chronic</div>
+                    <div class="pronunciation">/ˈkrɒn.ɪk/ (ক্রনিক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Persistent</div>
+                        <div class="bengali-meaning">দীর্ঘস্থায়ী</div>
+                    </div>
+                    <div class="example">Chronic diseases required long-term care.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Contagion</div>
+                    <div class="pronunciation">/kənˈteɪ.dʒən/ (কনটেজন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Spread</div>
+                        <div class="bengali-meaning">সংক্রমণ</div>
+                    </div>
+                    <div class="example">The contagion spread rapidly.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Diagnosis</div>
+                    <div class="pronunciation">/ˌdaɪ.əɡˈnoʊ.sɪs/ (ডায়াগনোসিস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Identification</div>
+                        <div class="bengali-meaning">রোগ নির্ণয়</div>
+                    </div>
+                    <div class="example">Early diagnosis improved outcomes.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Epidemic</div>
+                    <div class="pronunciation">/ˌep.ɪˈdem.ɪk/ (এপিডেমিক)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Outbreak</div>
+                        <div class="bengali-meaning">মহামারী</div>
+                    </div>
+                    <div class="example">The epidemic overwhelmed hospitals.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Gene</div>
+                    <div class="pronunciation">/dʒiːn/ (জিন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">DNA unit</div>
+                        <div class="bengali-meaning">জিন</div>
+                    </div>
+                    <div class="example">Gene therapy targeted rare disorders.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Immunity</div>
+                    <div class="pronunciation">/ɪˈmjuː.nɪ.ti/ (ইমিউনিটি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Resistance</div>
+                        <div class="bengali-meaning">প্রতিরোধ ক্ষমতা</div>
+                    </div>
+                    <div class="example">Vaccines boosted immunity.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Mutation</div>
+                    <div class="pronunciation">/mjuːˈteɪ.ʃən/ (মিউটেশন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Change</div>
+                        <div class="bengali-meaning">মিউটেশন</div>
+                    </div>
+                    <div class="example">The virus mutation alarmed scientists.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Pathogen</div>
+                    <div class="pronunciation">/ˈpæθ.ə.dʒən/ (প্যাথোজেন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Germ</div>
+                        <div class="bengali-meaning">রোগজনক</div>
+                    </div>
+                    <div class="example">Pathogens caused the outbreak.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Placebo</div>
+                    <div class="pronunciation">/pləˈsiː.boʊ/ (প্লাসিবো)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Dummy drug</div>
+                        <div class="bengali-meaning">প্লাসিবো</div>
+                    </div>
+                    <div class="example">The placebo group showed no improvement.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Prognosis</div>
+                    <div class="pronunciation">/prɒɡˈnoʊ.sɪs/ (প্রগনোসিস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Prediction</div>
+                        <div class="bengali-meaning">রোগ নির্ণয়</div>
+                    </div>
+                    <div class="example">The prognosis was optimistic.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Quarantine</div>
+                    <div class="pronunciation">/ˈkwɒr.ən.tiːn/ (কোয়ারেনটিন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Isolation</div>
+                        <div class="bengali-meaning">কোয়ারেন্টাইন</div>
+                    </div>
+                    <div class="example">Quarantine halted the disease spread.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Regimen</div>
+                    <div class="pronunciation">/ˈredʒ.ɪ.mən/ (রেজিমেন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Routine</div>
+                        <div class="bengali-meaning">নিয়ম</div>
+                    </div>
+                    <div class="example">The patient followed a strict regimen.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Therapy</div>
+                    <div class="pronunciation">/ˈθer.ə.pi/ (থেরাপি)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Treatment</div>
+                        <div class="bengali-meaning">থেরাপি</div>
+                    </div>
+                    <div class="example">Therapy improved mental health.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Triage</div>
+                    <div class="pronunciation">/ˈtriː.ɑːʒ/ (ট্রিয়াজ)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Prioritization</div>
+                        <div class="bengali-meaning">ট্রায়াজ</div>
+                    </div>
+                    <div class="example">Triage guided emergency care.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Vaccine</div>
+                    <div class="pronunciation">/ˈvæk.siːn/ (ভ্যাকসিন)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Immunization</div>
+                        <div class="bengali-meaning">টিকা</div>
+                    </div>
+                    <div class="example">The vaccine prevented outbreaks.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Vector</div>
+                    <div class="pronunciation">/ˈvek.tər/ (ভেক্টর)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Carrier</div>
+                        <div class="bengali-meaning">বাহক</div>
+                    </div>
+                    <div class="example">Mosquitoes are vectors for malaria.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Virus</div>
+                    <div class="pronunciation">/ˈvaɪ.rəs/ (ভাইরাস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Pathogen</div>
+                        <div class="bengali-meaning">ভাইরাস</div>
+                    </div>
+                    <div class="example">The virus caused widespread illness.</div>
+                </div>
+                <div class="term-card">
+                    <div class="term-name">Wellness</div>
+                    <div class="pronunciation">/ˈwel.nəs/ (ওয়েলনেস)</div>
+                    <div class="meaning">
+                        <div class="simple-meaning">Health</div>
+                        <div class="bengali-meaning">সুস্থতা</div>
+                    </div>
+                    <div class="example">Wellness programs promoted healthy lifestyles.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
